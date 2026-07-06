@@ -39,6 +39,51 @@ h2::after {
   opacity: 0.7;
 }
 
+/* --- Summary statistics row --- */
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.stat-box {
+  flex: 1 1 200px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.5rem 1.25rem;
+  background: var(--foam);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(62, 39, 35, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(62, 39, 35, 0.16);
+  border-color: var(--amber);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--amber);
+  text-transform: capitalize;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--wood-soft);
+}
+
 /* --- Brewery card grid (ready for when you render the data) --- */
 .brewery-grid {
   display: grid;
