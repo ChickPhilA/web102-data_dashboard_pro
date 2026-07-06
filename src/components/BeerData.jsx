@@ -1,25 +1,22 @@
-import '../App.css'
-const BeerData = ({data, brewCount, brewFreq, cities}) => {
-    return(
-        <>
-            <div className="container">
-                <div id="totalBrew" className="stat-box">
-                    {brewCount}
-                </div>
-                <div id="mostCommonBrew" className="stat-box">
+// import '../App.css'
+// const BeerData = ({data}) => {
+//     return(
+//         <>
+//             <div className="container">
 
-                </div>
-                <div id="uniqueCities" className="stat-box">
+//                 {/* We'll place our data in here, using a map. */}
+//                 <div>
+//                     {/* {data ?
+//                         data.map((brewery)) = (
+                            
+//                         )
+//                         :
+//                         null
+//                     } */}
+//                 </div>
+//             </div>
+//         </>
+//     )
+// }
 
-                </div>
-
-                {/* We'll place our data in here, using a map. */}
-                <div>
-
-                </div>
-            </div>
-        </>
-    )
-}
-
-export default BeerData
+// export default BeerData
