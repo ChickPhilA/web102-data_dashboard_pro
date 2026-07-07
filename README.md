@@ -2,9 +2,9 @@
 
 Submitted by: **Phillipe Manio**
 
-This web app: **insert description**
+This web app: **Looking for a local pub to hang out at or just wanting to browse and search for pubs around the world? You're at the right place- *Pubtopia* is the perfect place for you! Filtering by search and drop-downs are included, so you can find your favorite pub in no time.**
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
@@ -22,7 +22,7 @@ The following **required** functionality is completed:
 - [X] **A search bar allows the user to search for an item in the fetched data**
   - The search bar **correctly** filters items in the list, only displaying items matching the search query
   - The list of results dynamically updates as the user types into the search bar
-- [ ] **An additional filter allows the user to restrict displayed items by specified categories**
+- [X] **An additional filter allows the user to restrict displayed items by specified categories**
   - The filter restricts items in the list using a **different attribute** than the search bar 
   - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
   - The dashboard list dynamically updates as the user adjusts the filter
@@ -42,18 +42,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+https://youtu.be/AgzUAyUdhJI
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- I would say that this app is easier than the previous one, but only because I have a better idea of how utilizing API resources work now, compared to guiding myself for the first time in Project 4. I would say the only challenge I experienced was handling both filters, the search and the dropdown, simutameously at the same time.
 
 ## License
 
