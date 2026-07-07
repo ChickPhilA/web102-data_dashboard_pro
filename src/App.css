@@ -84,6 +84,87 @@ h2::after {
   color: var(--wood-soft);
 }
 
+/* --- Search / filter controls --- */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.search-bar {
+  flex: 1 1 320px;
+  max-width: 480px;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--wood-brown);
+  background: var(--foam);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(62, 39, 35, 0.08);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.search-bar::placeholder {
+  color: var(--wood-soft);
+  opacity: 0.7;
+}
+.search-bar:focus {
+  outline: none;
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px rgba(217, 143, 47, 0.25);
+}
+
+/* --- Brewery table --- */
+.brewery-table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--foam);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(62, 39, 35, 0.08);
+  font-family: var(--font-body);
+  text-align: left;
+}
+
+.brewery-table thead {
+  background: var(--amber);
+}
+
+.brewery-table th {
+  padding: 0.9rem 1.1rem;
+  color: var(--foam);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.brewery-table td {
+  padding: 0.85rem 1.1rem;
+  font-size: 0.92rem;
+  color: var(--wood-soft);
+  border-top: 1px solid var(--border);
+  text-transform: capitalize;
+}
+
+.brewery-table tbody tr {
+  transition: background 0.12s ease;
+}
+.brewery-table tbody tr:hover {
+  background: rgba(217, 143, 47, 0.10);
+}
+
+/* first column (name) reads as the row's anchor */
+.brewery-table td:first-child {
+  font-weight: 700;
+  color: var(--wood-brown);
+}
+
 /* --- Brewery card grid (ready for when you render the data) --- */
 .brewery-grid {
   display: grid;
