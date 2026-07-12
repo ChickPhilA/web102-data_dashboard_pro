@@ -30,7 +30,7 @@ h2 {
 }
 
 /* decorative amber divider under the intro */
-h2::after {
+h2:not(.pub-name)::after {
   content: "🍺 · 🍺 · 🍺";
   display: block;
   margin-top: 1rem;
@@ -189,6 +189,83 @@ h2::after {
 .brewery-table td:first-child {
   font-weight: 700;
   color: var(--wood-brown);
+}
+
+/* --- Pub detail title --- */
+.pub-name {
+  margin: 1.5rem 0 0.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, var(--amber), var(--wood-brown));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 3px 6px rgba(62, 39, 35, 0.2);
+}
+
+/* --- Pub detail table --- */
+.pub-detail-table {
+  width: 100%;
+  max-width: 640px;
+  margin: 1.5rem auto 2rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--foam);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(62, 39, 35, 0.08);
+  font-family: var(--font-body);
+  text-align: left;
+}
+
+.pub-detail-table tr:not(:first-child) td {
+  border-top: 1px solid var(--border);
+}
+
+.pub-detail-table td {
+  padding: 0.85rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--wood-soft);
+}
+
+.pub-detail-table tr:hover td {
+  background: rgba(217, 143, 47, 0.10);
+}
+
+/* label column */
+.pub-detail-table td:first-child {
+  width: 40%;
+  font-weight: 700;
+  color: var(--wood-brown);
+  white-space: nowrap;
+}
+
+.pub-detail-table a {
+  color: var(--amber);
+  font-weight: 600;
+  text-decoration: none;
+}
+.pub-detail-table a:hover {
+  text-decoration: underline;
+}
+
+/* --- About box --- */
+.about-box {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.5rem 1.75rem;
+  background: var(--foam);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(62, 39, 35, 0.08);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--wood-soft);
+  text-align: left;
 }
 
 /* --- Brewery card grid (ready for when you render the data) --- */
