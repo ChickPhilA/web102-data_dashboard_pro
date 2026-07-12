@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from "axios"
+import { Link } from 'react-router'
 import './App.css'
 import SummaryStats from './components/SummaryStats.jsx'
 
@@ -130,7 +131,11 @@ function App() {
        <tbody>
          {filteredBreweries.map((brewery) => (
            <tr key={brewery.id}>
-             <td>{brewery.name}</td>
+             <td>
+              <Link to={`/pubDetails/${brewery.id}`}>
+                {brewery.name}
+              </Link>
+            </td>
              <td>{brewery.brewery_type}</td>
              <td>{brewery.city}</td>
              <td>{brewery.state}</td>
