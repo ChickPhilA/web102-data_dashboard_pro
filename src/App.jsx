@@ -3,6 +3,8 @@ import axios from "axios"
 import { Link } from 'react-router'
 import './App.css'
 import SummaryStats from './components/SummaryStats.jsx'
+import BreweryTypeChart from './charts/BreweryTypeChart.jsx'
+import TopCountriesChart from './charts/TopCountriesChart.jsx'
 
 function App() {
   const [breweryData, setBreweryData] = useState([])
@@ -98,6 +100,11 @@ function App() {
      <h1> Pubtopia 🍺 </h1>
      <h2> Find information about local and global pubs around you!</h2>
      <SummaryStats brewCount={totalBreweries} mostCommon={topBrewery} cities={uniqueCities} />
+
+     <div className="charts-row">
+       <BreweryTypeChart breweryData={breweryData}/>
+       <TopCountriesChart breweryData={breweryData}/>
+     </div>
 
      <div className="controls">
        <input
