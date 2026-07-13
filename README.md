@@ -15,7 +15,7 @@ The following **required** functionality is completed:
   - Detail view includes extra information about the item not included in the dashboard view
   - The same sidebar is displayed in detail view as in dashboard view
   - *To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.*
-- [ ] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+- [X] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
   -  *To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.*
 - [ ] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
   - At least two charts should be incorporated into the dashboard view of the site
