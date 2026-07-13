@@ -1,13 +1,19 @@
-import { Outlet, Link } from "react-router"
+{/* Our navigation bar for the Pubtopia website. */}
+
+import { Outlet, NavLink } from "react-router"
 
 function Layout(){
   return (
-    <div>
-      <nav className="home-link" key="home-button">
-        <Link to="/"> Home  </Link>
-        <Link to="about"> About </Link>
+    <div className="app-shell">
+      <nav className="sidebar">
+        <NavLink to="/" end className="sidebar-link">🏠 Home</NavLink>
+        <NavLink to="about" className="sidebar-link">ℹ️ About</NavLink>
       </nav>
-      <Outlet />
+      <main className="page-content">
+        <div className="page-inner">
+          <Outlet />
+        </div>
+      </main>
     </div>
   )
 }
