@@ -2,11 +2,64 @@
    Beertopia 🍺 — App / page styling (Pub & Amber Theme)
    =========================================================== */
 
-#root {
-  max-width: 1100px;
-  margin: 0 auto;
+/* --- Sidebar layout shell --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 1.1rem;
+  background: var(--wood-brown);
+  box-shadow: 2px 0 16px rgba(62, 39, 35, 0.2);
+  z-index: 10;
+}
+
+.sidebar-link {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  color: var(--foam);
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.sidebar-link:hover {
+  background: rgba(255, 248, 231, 0.1);
+  color: var(--amber-bright);
+  text-decoration: none;
+}
+.sidebar-link[aria-current="page"] {
+  background: var(--amber);
+  color: var(--foam);
+}
+
+.page-content {
+  margin-left: 220px;
   padding: 2rem 1.5rem 4rem;
   text-align: center;
+}
+
+.page-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .page-content {
+    margin-left: 0;
+  }
 }
 
 /* --- Hero header --- */
