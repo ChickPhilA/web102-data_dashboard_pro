@@ -2,7 +2,7 @@
 
 Submitted by: **Phillipe Manio**
 
-This web app: **insert description**
+This web app: **Pubtopia Pro is an extension of the original Pubtopia web application, created by Phillipe (Phil) Manio. With a static and simple navigation bar provided on every web page, appealing charts that represent certain statistics from our brewery data, and a every brewery provided with their own individual and detailed webpage, Pubtopia Pro just got better for pub-hunters.**
 
 Time spent: **5** hours spent in total
 
